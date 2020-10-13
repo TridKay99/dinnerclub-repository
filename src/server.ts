@@ -16,7 +16,7 @@ const {
   MONGO_PATH,
 } = process.env;
 
-mongoose.connect(process.env.MONGODB_URI || `${MONGO_PATH}`, {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/DinnerClub', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -49,7 +49,8 @@ const getAllUserProfiles = (request: express.Request, response: express.Response
     })
 }
 
-app.get('/create-breakky-blog', (request: express.Request, response: express.Response) => {
+
+app.post('/create-breakky-blog', (request: express.Request, response: express.Response) => {
   BreakkyBlogService.create(request, response)
 })
 
@@ -57,9 +58,9 @@ app.get('/get-all-breakky-blog', (request: express.Request, response: express.Re
   BreakkyBlogService.getAll(request, response)
 })
 
-// app.get('/get-breakky-blog', (request: express.Request, response: express.Response) => {
-//   BreakkyBlogService.findOne(request, response)
-// })
+app.get('/get-breakky-blog', (request: express.Request, response: express.Response) => {
+  BreakkyBlogService.findOne(request, response)
+})
 
 app.delete('/delete-breakky-blog/', (request: express.Request, response: express.Response) => {
   BreakkyBlogService.delete(request, response)
