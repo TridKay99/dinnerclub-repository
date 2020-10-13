@@ -6,8 +6,8 @@ const breakkyBlogSchema = new mongoose.Schema({
   cafe: String,
   location: String,
   displayImage: String,
-  body: String,
-  blogType: String
+  BlogText: String,
+  blogVariety: String
 })
 
 const breakkyBlogModel = mongoose.model<BreakkyBlog & mongoose.Document>('BreakkyBlog', breakkyBlogSchema)

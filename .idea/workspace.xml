@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f46ac0-99eb-432d-b568-0d449df61dfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/breakky-blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/breakky-blog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/breakky-blog-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/breakky-blog-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/BreakkyBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/BreakkyBlog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <workItem from="1602151228177" duration="2981000" />
       <workItem from="1602222333625" duration="1521000" />
       <workItem from="1602238311023" duration="22000" />
-      <workItem from="1602483374082" duration="3659000" />
+      <workItem from="1602483374082" duration="6080000" />
     </task>
     <servers />
   </component>

@@ -80,4 +80,4 @@ function getUserProfileById(request: express.Request, response: express.Response
     })
 }
 
-app.listen(5000);
+app.listen(5000, () => console.log('app is listening on port'));
