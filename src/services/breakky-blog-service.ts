@@ -5,12 +5,13 @@ import userProfileModel from "../models/user-profile"
 
 export const BreakkyBlogService = {
   create: (request: express.Request, response: express.Response) => {
-    const breakkyBlog: BreakkyBlog = request.body.body;
+    const breakkyBlog= request.body;
     console.log('breakkyBlog', breakkyBlog)
-    const createBreakkyBlog = new breakkyBlogModel(breakkyBlog);
+    const createBreakkyBlog = new breakkyBlogModel(breakkyBlog.data);
     console.log('createBreakkyBlog', createBreakkyBlog)
     createBreakkyBlog.save()
       .then(savedPost => {
+        console.log('savedPost', savedPost)
         response.send(savedPost)
       })
       .catch((response) => console.log(response))

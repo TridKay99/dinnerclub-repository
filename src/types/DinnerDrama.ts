@@ -1,10 +1,12 @@
 import {BlogType} from "./BlogType"
+import {FileType} from "./FileType"
 
 export type DinnerDrama = {
   title: String
-  cafe: String
+  restaurant: String
   location: String
-  displayImage: String
-  body: String
-  blogType: BlogType.DINNER
+  displayImage: FileType
+  blogText: String
+  blogVariety: BlogType.DINNER
+  date: Date
 }

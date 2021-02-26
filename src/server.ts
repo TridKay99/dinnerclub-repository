@@ -49,7 +49,7 @@ const getAllUserProfiles = (request: express.Request, response: express.Response
     })
 }
 
-
+//DINNER DRAMA
 app.post('/create-breakky-blog', (request: express.Request, response: express.Response) => {
   BreakkyBlogService.create(request, response)
 })
@@ -66,10 +66,24 @@ app.delete('/delete-breakky-blog/', (request: express.Request, response: express
   BreakkyBlogService.delete(request, response)
 })
 
-app.get('/create-dinner-drama', (request: express.Request, response: express.Response) => {
-  DinnerDramaService.createDinnerDrama(request, response)
+//DINNER DRAMA
+app.post('/create-dinner-drama', (request: express.Request, response: express.Response) => {
+  DinnerDramaService.create(request, response)
 })
 
+app.get('/get-all-dinner-drama', (request: express.Request, response: express.Response) => {
+  DinnerDramaService.getAll(request, response)
+})
+
+app.get('/get-dinner-drama', (request: express.Request, response: express.Response) => {
+  DinnerDramaService.findOne(request, response)
+})
+
+app.delete('/delete-dinner-drama/', (request: express.Request, response: express.Response) => {
+  DinnerDramaService.delete(request, response)
+})
+
+//USER PROFILE
 router.get('userProfile/:id', getUserProfileById);
 
 function getUserProfileById(request: express.Request, response: express.Response) {

@@ -4,7 +4,8 @@ export type BreakkyBlog = {
   title: String
   cafe: String
   location: String
-  displayImage: String
-  BlogText: String
+  displayImage: File
+  blogText: String
   blogVariety: BlogType
+  date: Date
 }

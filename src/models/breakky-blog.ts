@@ -5,9 +5,10 @@ const breakkyBlogSchema = new mongoose.Schema({
   title: String,
   cafe: String,
   location: String,
-  displayImage: String,
-  BlogText: String,
-  blogVariety: String
+  displayImage: {},
+  blogText: String,
+  blogVariety: String,
+  date: Date
 })
 
 const breakkyBlogModel = mongoose.model<BreakkyBlog & mongoose.Document>('BreakkyBlog', breakkyBlogSchema)
