@@ -16,7 +16,7 @@ export const DinnerDramaService = {
 
   update: (request: express.Request, response: express.Response) => {
     try {
-      dinnerDramaModel.updateOne({_id: request.body._id}, request.body).then(() => {
+      dinnerDramaModel.updateOne({_id: request.body.data._id}, request.body.data).then(() => {
         response.status(201).json({message: 'Done Tridda. Here are BOOBS'})
       })
 

@@ -32,7 +32,7 @@ export const BreakkyBlogService = {
 
   update: (request: express.Request, response: express.Response) => {
     try {
-      breakkyBlogModel.updateOne({_id: request.body._id}, request.body).then(() => {
+      breakkyBlogModel.updateOne({_id: request.body.data._id}, request.body.data).then(() => {
         response.status(201).json({message: 'Done Tridda. Here are BOOBS'})
       })
 
