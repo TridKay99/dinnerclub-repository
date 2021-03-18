@@ -49,9 +49,13 @@ const getAllUserProfiles = (request: express.Request, response: express.Response
     })
 }
 
-//DINNER DRAMA
+//BREAKKY BLOG
 app.post('/create-breakky-blog', (request: express.Request, response: express.Response) => {
   BreakkyBlogService.create(request, response)
+})
+
+app.put('/update-breakky-blog', (request: express.Request, response: express.Response) => {
+  BreakkyBlogService.update(request, response)
 })
 
 app.get('/get-all-breakky-blog', (request: express.Request, response: express.Response) => {
@@ -69,6 +73,10 @@ app.delete('/delete-breakky-blog/', (request: express.Request, response: express
 //DINNER DRAMA
 app.post('/create-dinner-drama', (request: express.Request, response: express.Response) => {
   DinnerDramaService.create(request, response)
+})
+
+app.put('/update-dinner-drama', (request: express.Request, response: express.Response) => {
+  DinnerDramaService.update(request, response)
 })
 
 app.get('/get-all-dinner-drama', (request: express.Request, response: express.Response) => {

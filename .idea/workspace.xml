@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="08f46ac0-99eb-432d-b568-0d449df61dfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/breakky-blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/breakky-blog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/dinner-drama.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/dinner-drama.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/breakky-blog-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/breakky-blog-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/dinner-drama-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/dinner-drama-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/BreakkyBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/BreakkyBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/DinnerDrama.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/DinnerDrama.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +86,9 @@
       <workItem from="1607788945043" duration="907000" />
       <workItem from="1612866126250" duration="35000" />
       <workItem from="1613697008918" duration="1740000" />
+      <workItem from="1614314111546" duration="447000" />
+      <workItem from="1614314671602" duration="1239000" />
+      <workItem from="1616053928403" duration="1770000" />
     </task>
     <servers />
   </component>

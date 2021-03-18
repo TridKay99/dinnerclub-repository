@@ -14,6 +14,17 @@ export const DinnerDramaService = {
       })
   },
 
+  update: (request: express.Request, response: express.Response) => {
+    try {
+      dinnerDramaModel.updateOne({_id: request.body._id}, request.body).then(() => {
+        response.status(201).json({message: 'Done Tridda. Here are BOOBS'})
+      })
+
+    } catch (e) {
+      console.log('ERROR TRIDDA!!', e)
+    }
+  },
+
   getAll: (request: express.Request, response: express.Response) => {
     dinnerDramaModel.find()
       .then(posts => {

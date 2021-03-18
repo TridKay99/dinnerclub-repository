@@ -2,13 +2,12 @@ import * as express from "express"
 import {BreakkyBlog} from "../types/BreakkyBlog"
 import breakkyBlogModel from "../models/breakky-blog"
 import userProfileModel from "../models/user-profile"
+import dinnerDramaModel from "../models/dinner-drama"
 
 export const BreakkyBlogService = {
   create: (request: express.Request, response: express.Response) => {
     const breakkyBlog= request.body;
-    console.log('breakkyBlog', breakkyBlog)
     const createBreakkyBlog = new breakkyBlogModel(breakkyBlog.data);
-    console.log('createBreakkyBlog', createBreakkyBlog)
     createBreakkyBlog.save()
       .then(savedPost => {
         console.log('savedPost', savedPost)
@@ -29,6 +28,17 @@ export const BreakkyBlogService = {
       .then(posts => {
         response.send(posts);
       })
+  },
+
+  update: (request: express.Request, response: express.Response) => {
+    try {
+      breakkyBlogModel.updateOne({_id: request.body._id}, request.body).then(() => {
+        response.status(201).json({message: 'Done Tridda. Here are BOOBS'})
+      })
+
+    } catch (e) {
+      console.log('ERROR TRIDDA!!', e)
+    }
   },
 
   delete: (request: express.Request, response: express.Response) => {
