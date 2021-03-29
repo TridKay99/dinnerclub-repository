@@ -14,6 +14,7 @@ const {
   MONGO_USER,
   MONGO_PASSWORD,
   MONGO_PATH,
+  PORT
 } = process.env;
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/DinnerClub', {
@@ -102,4 +103,4 @@ function getUserProfileById(request: express.Request, response: express.Response
     })
 }
 
-app.listen(5000, () => console.log('app is listening on port'));
+app.listen(process.env.PORT || 5000, () => console.log(`app is listening on port ${process.env.PORT}`));
